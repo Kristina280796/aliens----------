@@ -290,7 +290,7 @@ html {
   margin-right: 20px;
 
 }
-@media (max-width: 1700px) {
+@media (min-width:1200px) and (max-width: 1920px) {
  html {
   font-size: 14px;
  }
@@ -298,4 +298,4 @@ html {
   background-position: center;
  }
   }
-
+  
