@@ -53,10 +53,10 @@ html {
 .navbar-light .header-logo-path{
   fill:#292D33;
 }
-.header{
+.header {
   padding-top: 5.875rem;
-  min-height: 100vh;
 }
+
 .header-image{
   background-image: url("../img/header-bg.jpg");
   background-size: cover;
@@ -196,10 +196,46 @@ html {
   position: relative;
   margin-left: .5625rem;
   width: 90rem;
-  
+}
+
+.slider-buttons-prev-steps,
+.slider-buttons-next-steps {
+  width: 60px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #5C8EE5;
+  flex-basis: 11%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.slider-buttons-steps{
+  height: 80px;
+  min-height: 100%;
+}
+
+
+.slider-button-prev, 
+.slider-button-next {
+height: 100%;
+flex-basis: 50%;
+border:1px solid rgba(235, 235, 240, 0.20);
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.slider-buttons {
+  display: none;
+  height: 44px;
+  display: flex;
 }
 .header-features-item{
   padding: 1.8125rem 3.875rem 1.8125rem 3rem;
+  min-height: 100%;
   width: 18rem;
   border: .0625rem solid rgba(235, 235, 240, 0.20);
 }
@@ -215,9 +251,6 @@ html {
   margin-bottom: 0;
   margin-top: 1.125rem;
 
-}
-.header-features-item:not(:last-child){
-  border-right:none;
 }
 .section-title{
   font-family: "Bebas Neue Book";
@@ -341,6 +374,11 @@ html {
     padding-right: 2rem;
     margin-bottom: 0px;
   }
+  .slider-buttons{
+    display: flex;
+    
+  }
+
 }
 @media (max-width:1044px) {
   html {
@@ -482,6 +520,35 @@ html {
   }
   .close-menu .mobile-menu-line:nth-child(3) {
       transform: rotate(-45deg) translate(14px);
-  
 
+}
+
+@media (max-width: 820px) {
+  .container {
+    max-width: 40rem;
+    margin: -36px 25px 30px 38px;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-content {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 688px) {
+  .container {
+    max-width: 90%;
+    margin-left: 20px;
+  }
+  .header-title {
+    font-size: 3rem;
+  }
+  .header-content {
+    padding-top: 2rem;
+  }
+  .swiper-wrapper header-features {
+    margin: 82px 28px 26px -320px;
+  }
+}
 }
